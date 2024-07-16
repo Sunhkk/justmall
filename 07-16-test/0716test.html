@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>시험 테스트</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        *{box-sizing: border-box;}
+        .menu-container{
+            
+            height: 150px;
+            margin: auto;
+            font-family:  malgun-gothic, "맑은고딕" , sans-serif;
+            font-weight: 700;
+            max-width: 1200px;
+            
+        }
+       
+        .menu2{
+            display: inline-block;
+            float: right;
+            padding-right: 40px;
+            text-decoration: none;
+            margin-top: 50px;
+            font-size: 24px;
+            color: black;
+            position: relative;
+        }
+        .menu2:hover{
+            color: #ededed;
+        }
+        .logo{
+            
+            height: 150px;
+            position: absolute;
+            width: 150px;
+            top: 40px;
+            
+        }
+        .logo img{
+            width: 80px;
+            height: 80px;
+        }
+        /* -------메인------- */
+        .main-img{
+            max-width: 1200px;
+            max-height: 300px;
+            position: absolute;
+            margin-left: 310px;
+            object-fit: cover;
+            
+        }
+        .main-img img{
+            height: 300px;
+            width: 1200px;
+            
+        }
+        .sale{
+            position: absolute;
+            width: 25%;
+            bottom:60px;
+            left: 120px;
+            font-size: 60px;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.7);
+            
+        }
+        /* -------공지사항,배너,바로가기------- */
+        .sub-container{
+            display: inline-block;
+            
+        }
+        .tab{
+            height: 200px;
+            border: 2px solid black;
+            margin-top: 310px;
+            width: 450px;
+            text-align: left;
+            margin-left: 310px;
+        }
+        .banner{
+            height: 200px;
+            position: absolute;
+            padding-left: 750px;
+            top: 450px;;
+            list-style-type: none;
+        }
+        .banner li{list-style: none;}
+
+        .reservation{
+            height: 200px;
+            position: absolute;
+            display: inline-block;
+            margin-left: 1110px;
+            top:470px;
+            background: #a0a0a077;
+            padding: 6.5px;
+         
+        }
+        .reservation img{
+            width: 100px;
+            height: 100px;
+        }
+      .qbn1,.qbn2,.qbn3{
+        border:1px solid black;
+        border-radius: 15px;
+        padding-top: 15px ;
+        padding-bottom: 15px;
+        text-align: center;
+        padding-left: 5px;
+        padding-right: 5px;
+        margin: 6px;
+        background-color: #fff;
+      }
+      .qbn1{float: left;}
+      .qbn2{float: left;}
+      .qbn3{float: right;}
+      .back{background: #edededd2;}
+      .box{
+        border: 1px solid #0c0c0c;
+        border-radius: 5px;
+        padding: 2px;
+        box-shadow: 1.5px 1.5px;
+      }
+      .qb2{
+        text-decoration-line: none;
+        color: #0c0c0c;
+        
+      }
+      /* footer */
+      footer{               
+                background: #333;
+                color: #fff;
+                width: 1200px;
+                height: 100px;
+                margin-left: 310px;
+                margin-top: 10px;
+                display: flex;
+                justify-content: space-between;
+
+            }
+            .foot-info{
+                font-size: 12px;
+                text-align: center;
+                padding: 0;
+            }
+            .foot-logo{
+                padding-left: 20px;
+                padding-top: 30px;
+            }
+            .foot-sns{
+                padding-right: 20px;
+                padding-top: 35px;
+            }
+            .foot-sns img{
+                width: 25px;
+                height: 25px;
+            }
+    </style>
+</head>
+<body>
+
+    <div class="menu-container">
+        <div class="logo">
+        <img src="./03-배너/logo.png" alt="로고">Justmall★
+        </div>
+        <a href="#" class="menu2">액세서리</a>
+        <a href="#"class="menu2">팬츠</a>
+        <a href="#"class="menu2">아우터</a>
+        <a href="#"class="menu2">탑</a>
+    </div>
+       
+    </div>
+
+    <div class="main-img">
+        <img src="./01_메인이미지/슬라이드1.jpg" alt="메인이미지">
+        <div class="sale">
+            어메이징한 <br> 50%할인
+        </div>
+    </div>
+    <div class="sub-container">
+        <!-- 탭 -->
+        <div class="tab">
+            -------공지사항------
+            <ul>
+                <li>라이온 브랜드위크 이벤트 당첨자</li>
+                <li>모다아울렛Now 이벤트 당첨자</li>
+                <li>justmall 사이트 일시중단</li>
+                <li>경찰 제목/장비(유사상품) 판매금지</li>
+            </ul>
+        </div>
+
+        <!--배너  -->
+
+        <div class="banner">
+            <ul>
+            <li><a href="#"><img src="./03-배너/dream.png" alt="꿈"></a></li>
+            <li><a href="#"><img src="./03-배너/dont.png" alt="포기하지마"></a></li>
+            <li><a href="#"><img src="./03-배너/collage.png" alt="대학은가야지"></a></li>
+        </ul>
+        </div>
+
+        <!--예약편  -->
+
+        <div class="reservation">
+            
+            <div class="qbn1">
+                <!-- 교통편예약 -->
+                <a href="#"class="qb"><img src="./04-퀵메뉴/교통편예약.png" alt="교통"></a>
+            <div class="box"><a href="https://search.naver.com/search.naver?sm=tab_hty.top&where=nexearch&ssc=tab.nx.all&query=%EA%B5%90%ED%86%B5%ED%8E%B8+%EC%98%88%EC%95%BD&oquery=%EB%A3%B8%EC%84%9C%EB%B9%84%EC%8A%A4&tqi=iph55lqVOZCssPH8dN8ssssssms-376482" class="qb2">교통편 예약</a></div>
+        </div>
+
+        <!-- 룸서비스 -->
+            <div class="qbn2">
+            <a href="#"class="qb"><img src="./04-퀵메뉴/룸서비스.png" alt="룸서비스"></a>
+            <div class="box"><a href="https://search.naver.com/search.naver?sm=tab_hty.top&where=nexearch&ssc=tab.nx.all&query=%EB%A3%B8%EC%84%9C%EB%B9%84%EC%8A%A4&oquery=%EB%A7%9B%EC%A7%91%ED%83%90%EB%B0%A9&tqi=iph5vlqVOsCsssYShfossssstvK-484435" class="qb2">룸서비스 예약</a></div>
+
+    </div>
+            <!-- 맛집 -->
+            <div class="qbn3">
+            <a href="#"class="qb"><img src="./04-퀵메뉴/맛집탐방.png" alt="맛집탐방"></a>
+            <div class="box"><a href="https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=0&ie=utf8&query=%EB%A7%9B%EC%A7%91%ED%83%90%EB%B0%A9"class="qb2">맛집탐방 예약</a></div>
+                       
+        </div>
+        </div>
+        <footer>
+            <div class="foot-logo">
+                Justmall★
+            </div>
+            <!--  -->
+
+
+            <div class="foot-info">
+                <br>
+                법적고지 | 개인정보취급방침 | 개인정보처리방침<br><br>
+                JUST 쇼핑몰 [612-030] 부산광역시 해운대구 세실로175 (좌동)<br>
+                전화번호 : (051) 709-0700     사업자등록번호 : 605-82-05242  대표자 : 홍길동<br>
+                copyright(c) 2019 JUST SHOP. all rights reserved
+
+            </div>
+            <!--  -->
+
+
+            <div class="foot-sns">
+               <a href="https://facebook.com"><img src="./03-배너/facebook.png" alt="fb"> </a>
+               <a href="https://youtube.com"> <img src="./03-배너/youtube.png" alt="yt"></a>
+               <a href="https://instgram.com"><img src="./03-배너/insta.png" alt="inst"> </a>
+            </div>
+            <!--  -->
+        </footer>
+    
+</body>
+</html>
